@@ -1,0 +1,120 @@
+/*===== BACKGROUND COLOUR =====*/
+  body {
+      margin: 0;
+      background: #181C1C;
+      color: #ffffff;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 800;
+  }
+
+/*===== LOGO SIZE =====*/
+img {
+    height: 50px;
+    width: 50px;
+    margin-left: 0px;
+  }
+/*===== NAVIGATION BAR =====*/
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*===== POSITIONING OF HEADERS =====*/
+
+h1{
+  position: relative; 
+  top: 70px;
+  margin-left: 175px;
+  color: rgb(0, 206, 255);
+  font-size: 30px;
+  font-family: monaco,Consolas,Lucida Console,monospace;
+}
+
+h2{
+  position: relative; 
+  top: 40px;
+  margin-left: 205px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3{
+  position: relative; 
+  top: 5px;
+  margin-left: 205px;
+  color: rgb(118, 110, 110);
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  position: relative; 
+  top: 0px;
+  margin-left: 175px;
+  line-height: 22px;
+  color: rgb(118, 110, 110);
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+span{
+  color:rgb(0, 206, 255)
+}
